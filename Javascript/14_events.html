@@ -7,8 +7,17 @@
 </head>
 <body>
 	<button onclick="alert('Hello from button');" class="btn btn-primary">CLICK HERE</button>
+
+	<button id="button2" class="btn btn-success">CLICK HERE</button>
+	
 	<script type="text/javascript">
-		
+		document.getElementById('button2').onclick = function() {
+			clickMeFunction();
+		};
+
+		function clickMeFunction() {
+			alert('Hello from the best function, yayyyyyyy');
+		}
 	</script>
 </body>
 </html>
