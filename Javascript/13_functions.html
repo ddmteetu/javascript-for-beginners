@@ -6,12 +6,25 @@
 </head>
 <body>
 	<script type="text/javascript">
-		function addNumbers(number1, number2) {
+		function addNumbers() {
+			var number1 = 10;
+			var number2 = 20;
+			var calculation = number1 + number2;
+
+			return calculation;
+		}
+
+		var result = addNumbers();
+		var cal = 1000 + result;
+
+		alert(cal);
+
+		/*function addNumbers(number1, number2) {
 			var calculation = number1 + number2;
 
 			document.write(calculation);
 		}
-		addNumbers(100, 300);
+		addNumbers(100, 300);*/
 
 
 		/*function addNumbers() {
