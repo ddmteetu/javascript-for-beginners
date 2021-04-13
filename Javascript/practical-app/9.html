@@ -47,7 +47,7 @@ function saying anything you want, like we did on the video.
 
 -->
 
-<button id="theButton" class="btn btn-primary">SUBMIT</button>
+<button id="theButton" onclick="alert('Hello from theButton');" class="btn btn-primary">SUBMIT</button>
 
 
 
@@ -65,7 +65,7 @@ function saying anything you want, like we did on the video.
 
 
 
-<!--BUTTON HERE-->
+<button id="clickMe" class="btn btn-success">Click Me</button>
 
 
 
@@ -77,7 +77,9 @@ function saying anything you want, like we did on the video.
 
 
 
-//function here........
+function ClickMe() {
+	alert('This is another test for the Events.');
+}
 
 
 
@@ -91,7 +93,9 @@ function saying anything you want, like we did on the video.
 
 // Step 3 Create a document.getElementById() and put the Id you made in Step 1 inside the parentheses.
 
-// code here.....
+document.getElementById('clickMe').onclick = function() {
+	ClickMe();
+};
 
 // Step 4. Use a dot notation to append onclick = function(){} to the document.getELementById().
 
