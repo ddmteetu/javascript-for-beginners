@@ -6,7 +6,7 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var cars = ["BMW", "MERCEDES", "HONDA", "DATSUN"];
+		var cars = ["BMW", "MERCEDES", "HONDA", "DATSUN", "FORD"];
 
 		// removes first item
 		// cars.shift();
@@ -18,9 +18,12 @@
 		// cars.splice(2, 0, "dog", "cat");
 
 		// adds 2 items and removes 2 items too, starting at index 2
-		cars.splice(2, 2, "dog", "cat");
+		// cars.splice(2, 2, "dog", "cat");
 
-		alert(cars);
+		// creates a shallow copy of original array by extracting elements starting at index 2 and going to index 4 (not included)
+		var fancyCars = cars.slice(2, 4);
+
+		alert(fancyCars);
 	</script>
 </body>
 </html>
