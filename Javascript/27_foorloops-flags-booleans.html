@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var bestCities = ["San Antonio", "Phoenix", "Nashville", "Dallas", "Austin"];
+		var matchFound = false;
+
+		for (var i = 0; i < bestCities.length; i++) {
+			var userInput = prompt("What is your City?");
+			if (bestCities[i] === userInput) {
+				matchFound = true;
+			}
+			if (matchFound) {
+				document.write("Hey!! You live in the best city " + userInput.toUpperCase() + ". Congratulations!!");
+				break;
+			}
+		}
+
+		if (!matchFound) {
+			document.write("Sorry!! You don't live in the best city.");
+		}
+	</script>
+</body>
+</html>
